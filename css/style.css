@@ -368,6 +368,9 @@ flex-wrap:wrap ;
     margin-left: 100px;
     width: calc(50% - 100px);
 }
+.Projects .top_section h2{
+    margin-bottom: 40px;
+}
 .Projects .project_bpx .text h4{
     font-size: 20px;
     margin-bottom: 20px;
@@ -439,5 +442,267 @@ left: 17px;
 color: var(--extra_color);
 
 }
+
 /*End Contact */
+
+
+
+
+/*********  Start Responsive  ************/
+.close_menu{
+    display: none;
+}
+header .links .logo{
+    display: none;
+}
+.icon_menu{
+    display: none;
+}
+@media (max-width:1250px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media (max-width:1000px){
+    header nav .links {
+        position: fixed;
+        top: 0;
+        flex-direction: column;
+        width: 400px;
+        background-color: var(--black_color);
+        left: -400px;
+        padding: 50px 0 ;
+        height: 100%;
+        border-right: 1px solid var(--border-color);
+        text-align: center;
+        transition:0.3s ;
+    }
+    header nav .links.active{
+        left: 0;
+    }
+    .close_menu {
+        display: block;
+        font-size: 28px;
+        position: absolute;
+        top: 30px;
+        right: 30px;
+    }
+    header .links .logo{
+        display: block;
+    }
+    .icon_menu{
+        display: block;
+    }
+
+
+        /*Responsive Home */
+    .hero .div_text h4{
+        font-size: 15px;
+    }   
+    .hero .div_text h1{
+        font-size: 50px;
+    } 
+    .hero .div_text h2{
+        font-size: 50px;
+    } 
+    .hero .div_text p{
+        font-size:10px;
+        margin: 30px auto;
+    }
+    .hero .btn{
+        font-size:18px ;
+        padding: 16px 40px;
+    }
+    .hero .container{
+        flex-direction: column;
+    }
+    .hero .div_text{
+        width: 100%;
+        margin-top: 50px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .hero .botton{
+        justify-content:center ;
+    }
+    .hero{
+       height: auto; 
+    }
+
+    .about .container{
+        flex-direction: column;
+
+    }
+    .about .div_tex{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .about .divimg{
+        width: 45%;
+    }
+    /* services*/
+
+    .Services .boxs .box{
+        width: 47%;
+        margin-bottom: 30px;
+    }
+
+    /* Projects */
+    
+    .Projects .project_bpx .text h3{
+        font-size: 25px; ;
+    }
+    .Projects .project_bpx .text h4{
+        font-size:16px;
+    }
+    .Projects .project_bpx .text p{
+        font-size: 14px;
+    }
+    .Projects .project_bpx .text{
+        width: calc(50% - 50px);
+        margin-left: 50px;
+    }
+
+
+    /* Contact */
+
+
+    .contact .social_contact .links{
+        flex-direction:row;
+        flex-wrap: wrap;
+    }
+    .contact .social_contact .links a{
+        width:30%;
+    }
+    .contact .social_contact .links a{
+        font-size: 16px;
+    }
+    .contact .social_contact .links a i{
+        width:35px;
+        height: 35px;
+        line-height: 35px;
+    }
+}
+
+@media (max-width:500px){
+    .botton{
+        padding: 12px 25px;
+        font-size: 14px;
+    }
+
+    header nav .icons a{
+    font-size: 20px;
+    }
+    header nav .icons{
+    gap: 15px;
+    align-items: center;
+    }
+    header nav .logo img{
+        width: 150px;
+    }
+    header nav .links{
+        width: 100%;
+        left: -100%;
+    }
+    .icon_menu{
+        margin-left:10px ;
+
+    }
+
+    .hero .div_text h4{
+        font-size: 15px;
+    }   
+    .hero .div_text h1{
+        font-size: 40px;
+    } 
+    .hero .div_text h2{
+        font-size:40px;
+    } 
+    .hero .div_text p{
+        font-size:8px;
+        margin: 25px auto;
+        width: 100%;
+    }
+    .hero .btn{
+        font-size:16px ;
+        padding: 14px 30px;
+    }
+    .hero .div_img{
+        width: 72%;
+    }
+    /* About */
+
+    .about .div_tex h2{
+        font-size: 20px;
+
+    }
+    .about .div_tex h4{
+        font-size: 18px;
+    }
+    .about .div_tex p{
+        font-size: 12px;
+
+    }
+    .about .div_tex ul li{
+        width: 100%;
+        font-size: 14px;
+    }
+    .about .divimg{
+        width: 85%;
+    }
+    
+    /* services */
+    .Services .top_section h2{
+        font-size: 22px;
+    }
+    .Services .boxs .box{
+        width: 100%;
+    }
+    .Services .boxs .box i{
+        font-size:55px ;
+    }
+
+    /* Projects */
+    .Projects .project_bpx{
+        flex-direction: column;
+    }
+    .Projects .project_bpx.project_bpx_2{
+        flex-direction: column;
+    }
+
+    .Projects .project_bpx img{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .Projects .project_bpx .text{
+        width:100%;
+        margin-left: 0;
+    }
+    .Projects .project_bpx .text p{
+        margin: 20px 0 30px;
+    }
+    .Projects .project_bpx .text h4{
+        font-size: 23px;
+    }
+    .Projects{
+     padding-bottom: 40px;   
+    }
+    /* Contact */
+    .contact .social_contact .links{
+        flex-direction: column;
+    }
+
+    .contact{
+        padding-top: 0;
+    }
+    .contact .top_section{
+        margin-bottom: 60px;
+    }
+   
+  
+
+
+    
+}
 

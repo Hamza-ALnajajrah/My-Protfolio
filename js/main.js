@@ -30,3 +30,14 @@ document.getElementById('Abo').addEventListener('click', function() {
         behavior: 'smooth' 
     });
 });
+document.getElementById('contact').addEventListener('click', function() {
+    document.getElementById('contact').scrollIntoView({ 
+        behavior: 'smooth' 
+    });
+});
+
+let nav_links=document.getElementById("links");
+function open_close_bar()
+{
+    nav_links.classList.toggle("active")
+}

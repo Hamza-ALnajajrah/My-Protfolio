@@ -13,7 +13,7 @@
 </head>
 <body>
 
-    <i class="fa-solid fa-bars" ></i>
+    
 
     <div class="bg-lines">
         <span></span>
@@ -32,18 +32,20 @@
     <header>
         <nav class="container">
             <a href="#logo"><img src="img/trnew.png"></a>
-             <div class="links">
+             <div class="links" id="links">
+                <span class="close_menu" onclick="open_close_bar()"><i class="fa-solid fa-xmark" ></i></span>
+                <a href="#" class="logo"><img src="img/trnew.png"></a>
                 <a class="active" href="#">Home</a>
                 <a href="#Abo" >About</a>
                 <a href="#ser" >Services</a>
                 <a href="#proj" >Projects</a>
-                <a href="#" >Contact</a>
+                <a href="#contact" >Contact</a>
              </div>
              <div class="icons">
                 <a href="https://x.com/hamzawi63927?s=21" target="_blank"><i class="fa-brands fa-twitter"></i></a>
                 <a href="https://www.linkedin.com/in/hamza-najajrah-589976292/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_verification_details%3BxdgMEfZKRpSqXajB%2FrCE4g%3D%3D" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                 <a href="https://www.instagram.com/hamzawi_8x?igsh=bWw4NGRrbW1jY3do&utm_source=qr" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-
+                <span class="icon_menu" onclick="open_close_bar()"> <i class="fa-solid fa-bars" ></i></span>
              </div>
         </nav>
     </header>
@@ -52,7 +54,7 @@
         <div class="container">
             <div class="div_text">
                 <h4>Hellow, i'm</h4>
-                <h2><span>Hamza Al-Najajrah.</span></h2>
+                <h1><span>Hamza Al-Najajrah.</span></h1>
                 <h2> "AI Developer & Machine Learning Engineer"</h2>
                 <p>"I'm a Machine Learning Engineer passionate about building
                     intelligent systems that solve real-world problems.
@@ -63,7 +65,7 @@
                     I thrive on turning data into actionable insights. </p>
                     <div class="botton">
                         <a href="#" class="btn">Hire Me</a>
-                        <a href="#" class="btn_no_bg">Download Resume</a>
+                        <a href="img/Hamza.pdf" class="btn_no_bg" download="" target="_blank">Download Resume</a>
                     </div>
             </div>
             <div class="div_img">
@@ -196,6 +198,7 @@
             </div>
         </div>
     </section>
+
 
 
     <script src="js/main.js"></script>
